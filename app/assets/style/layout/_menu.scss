@@ -1,0 +1,20 @@
+.menuNav{
+  flex-wrap: nowrap;
+  white-space:nowrap;
+  overflow-x: scroll;
+  cursor: grab;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  .nav-item{
+    padding-bottom: 1px;
+    &:hover{
+      padding-bottom: 0;
+      border-bottom: 1px solid $primary-light;
+    }
+  }
+  .active{
+    padding-bottom: 0;
+    border-bottom: 1px solid $primary-light;
+  }
+}

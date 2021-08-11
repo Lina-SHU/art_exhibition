@@ -1,0 +1,8 @@
+.footer{
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  @include media-breakpoint-up(md) { 
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}

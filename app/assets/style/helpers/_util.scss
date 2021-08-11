@@ -1,0 +1,6 @@
+.fullScreen{
+  height: auto;
+  @include media-breakpoint-up(md) { 
+    height: calc(100vh - 155px);
+  }
+}

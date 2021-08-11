@@ -1,0 +1,34 @@
+.cartProgress{
+  margin-bottom: 28px;
+  border-top: 2px solid $primary-light;
+  li{
+    position: relative;
+    padding-top: 6px;
+    &::before{
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: $white;
+      border: 1px solid $primary-light;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+    }
+  }
+  .cartDone{
+    &::before{
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: $primary-light;
+      border: 1px solid $primary-light;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+    }
+  }
+}

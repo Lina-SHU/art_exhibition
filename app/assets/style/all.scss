@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import './helpers/util';
+@import './helpers/base';
+@import './helpers/mixin';
+
+@import './layout/header';
+@import './layout/footer';
+@import './layout/menu';
+@import './layout/banner';
+@import './layout/process';
+@import './layout/offcanvas';
+
+@import './pages/index';
+@import './pages/product';
+@import './pages/detail';
+@import './pages/confirm';
+@import './pages/orderFinish';

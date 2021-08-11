@@ -1,0 +1,64 @@
+.detail{
+  margin-top: 44px;
+  @include media-breakpoint-up(md) { 
+    margin-top: $spacer * 5;
+  }
+}
+
+.detailContent{
+  img{
+    height: 559px;
+  }
+}
+
+.detailCard{
+  .card-img{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg') no-repeat;
+    height: 256px;
+    @include banner;
+    p{
+      width: 65px;
+    }
+  }
+}
+
+.ticket{
+  .ticket-border{
+    border-right: 0;
+    @include media-breakpoint-up(lg) { 
+      border-right: 1px solid $secondary;
+    }
+  }
+}
+
+.ticketNum{
+  padding-top: 0px;
+  height: auto;
+  @include media-breakpoint-up(lg) { 
+    padding-top: 88px;
+    height: 256px;
+  }
+  .input-group{
+    width: 180px;
+  }
+}
+
+.ticketPrice{
+  padding-top: 0px;
+  height: auto;
+  @include media-breakpoint-up(lg) { 
+    padding-top: 88px;
+  }
+  li{
+    a{
+      &:hover{
+        border-bottom: 1px solid $primary-light;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  .active{
+    border-bottom: 1px solid $primary-light;
+    padding-bottom: 3px;
+  }
+}

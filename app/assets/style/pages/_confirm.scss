@@ -1,0 +1,27 @@
+.cartCard{
+  height: 84px;
+  overflow: hidden;
+  .card-body{
+    padding-left: 12px;
+    @include media-breakpoint-up(sm) { 
+      padding-left: 30px;
+    }
+  }
+}
+
+.cartInputGroup{
+  width: 24px;
+  @include media-breakpoint-up(md) { 
+    width: 100px;
+    height: 24px;
+  }
+}
+
+.confirmCheck{
+  height: auto;
+  margin-top: 90px;
+  @include media-breakpoint-up(md) { 
+    height: calc(100vh - 155px);
+    margin-top: 0;
+  }
+}
