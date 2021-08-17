@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/27bd1ef315.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -20,7 +21,7 @@
 
     <div class="container">
       <section class="mb-4 mb-md-10">
-        <h2 class="h3 mb-6 fw-bold">猜你也喜歡...</h2>
+        <h2 data-aos="fade-up" class="h3 mb-6 fw-bold">猜你也喜歡...</h2>
         <div class="row justify-content-end">
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card border-0 guessLike">
@@ -62,8 +63,8 @@
       <div class="container h-100">
         <div class="d-flex align-items-end text-white h-100">
           <div class="subscribe">
-            <h2 class="mb-3 fs-3">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
-            <div class="subscribeForm input-group">
+            <h2 data-aos="fade-up" class="mb-3 fs-3">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
+            <div data-aos="fade-up" class="subscribeForm input-group">
               <input type="text" class="form-control p-3" placeholder="輸入您的電子信箱">
               <button class="btn btn-primary-light py-3" type="button">訂閱</button>
             </div>
@@ -83,6 +84,13 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 800,
+      });
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
