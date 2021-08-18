@@ -5126,8 +5126,8 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar > .container,
@@ -14843,6 +14843,17 @@ fieldset:disabled .btn {
 @media (min-width: 768px) {
   .fullScreen {
     height: calc(100vh - 155px);
+  }
+}
+
+@media (min-width: 992px) {
+  .position-lg-absolute {
+    position: absolute;
+  }
+  .translate-lg-middle {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 

@@ -17,28 +17,31 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light border border-secondary">
-  <div class="container position-relative w-100 my-4">
-    <div class="d-flex w-100 justify-content-center">
-      <a class="navbar-brand" href="./index.html">
-        <h1 class="fs-4 mb-0 text-center text-primary fw-normal">EXHIBINECTION</h1>
-      </a>
+  <div class="container position-relative">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuList">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand position-lg-absolute top-50 start-50 translate-lg-middle me-0" href="./index.html">
+      <h1 class="fs-4 mb-0 text-center text-primary fw-normal">EXHIBINECTION</h1>
+    </a>
+    <a class="nav-link px-4 position-relative order-lg-3" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#carts">
+      <i class="material-icons">confirmation_number</i>
+      <div class="cartNumber py-1 px-2 rounded-pill fs-10 bg-primary-light text-white position-absolute lh-1">3
+      </div>
+    </a>
+    <div class="collapse navbar-collapse" id="menuList">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link px-4 text-secondary" href="#">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4 text-secondary" href="#">Sign up</a>
+        </li>
+      </ul>
     </div>
-    <ul class="navbar-nav position-absolute top-0 end-0">
-      <li class="nav-item d-none d-lg-block">
-        <a class="nav-link px-4 text-secondary" href="#">Sign in</a>
-      </li>
-      <li class="nav-item d-none d-lg-block">
-        <a class="nav-link px-4 text-secondary" href="#">Sign up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-4 position-relative" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#carts">
-          <i class="material-icons">confirmation_number</i>
-          <div class="cartNumber py-1 px-2 rounded-pill fs-10 bg-primary-light text-white position-absolute lh-1">3
-          </div>
-        </a>
-      </li>
-    </ul>
   </div>
+
+  <!-- cart offacnvas-->
   <div class="offcanvas offcanvas-endStyle bg-dark" id="carts" data-bs-scroll="true">
     <div class="offcanvas-header px-4 px-md-7 pt-5 pt-md-7 pb-3">
       <h5 class="offcanvas-title fs-3 text-white">Cart List</h5>
