@@ -1,11 +1,8 @@
 .offcanvas-endStyle{
-  top: 87.2px;
+  top: 74.77px;
   right: 0;
   width: 540px;
   transform: translateX(100%);
-  @include media-breakpoint-up(md) { 
-    top: 93.6px;
-  }
 }
 
 .offcanvasBtn{

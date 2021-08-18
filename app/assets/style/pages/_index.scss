@@ -3,6 +3,20 @@
   @include media-breakpoint-up(sm) { 
     background:white;
   }
+  .hotExibitImg{
+    overflow: hidden;
+    img{
+      height: 345px;
+      @include media-breakpoint-up(sm) { 
+        height: 350px;
+      }
+      &:hover{
+        opacity: .7;
+        transform: scale(1.2);
+        transition: all .8s ease-in-out;
+      } 
+    }
+  }
 }
 
 .recall{
@@ -39,6 +53,20 @@
     height: 350px;
     vertical-align: middle;
     object-fit: cover;
+  }
+  a{
+    &:hover .overlay{
+      opacity: 1;
+    }
+  }
+  .overlay{
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba($primary, 0.5);
+    .seeMore{
+      color: white;
+      font-size: 20px;
+    }
   }
 }
 
