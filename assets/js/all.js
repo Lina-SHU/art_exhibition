@@ -22,4 +22,14 @@ slider.addEventListener('mousemove', function (e) {
   var walk = (x - startX) * 3;
   slider.scrollLeft = scrollLeft - walk;
 });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
 //# sourceMappingURL=all.js.map

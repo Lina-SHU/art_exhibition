@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    Payment
+    PersonalInfo
   </title>
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -130,7 +130,7 @@
       <div class="d-flex align-items-center text-white">
         <p class="fs-7 mb-0 me-6">小計</p>
         <p class="fs-7 mb-0">NT$1050</p>
-        <a href="./confirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
+        <a href="./cartConfirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
       </div>
     </div>
   </div>
@@ -138,29 +138,38 @@
 
   
 <div class="container pt-5 pb-8">
-  <ul class="cartProgress list-unstyled d-flex d-md-none justify-content-around mb-5">
-    <li class="cartDone">確認訂單</li>
-    <li class="cartDone">填寫訂購資訊</li>
-    <li class="fw-bold cartDone">填寫付款資訊</li>
-    <li>完成訂購</li>
-  </ul>
+  <div class="row mb-5 mb-md-6-lg">
+    <div class="col-md-8">
+      <ul class="cartProgress list-unstyled d-flex justify-content-around mb-0">
+        <li class="progressBar cartDone">確認訂單</li>
+        <li class="progressBar fw-bold cartDone">填寫訂購資訊</li>
+        <li class="progressBar">填寫付款資訊</li>
+        <li class="progressBar">完成訂購</li>
+      </ul>
+    </div>
+  </div>
   <div class="row flex-row-reverse">
-    <div class="col-md-4 mb-6 mb-md-0">
-      <div class="mt-0 mt-md-11 mb-9 mb-md-12">
-        <h2 class="fs-7 fw-bold mb-5">付款資訊</h2>
+    <div class="col-md-4 mb-6 mb-md-0"> 
+      <div class="mb-9 mb-md-10">
+        <h2 class="fs-7 fw-bold mb-5">訂購人資訊</h2>
         <form>
           <div class="mb-5">
-            <label for="craditAccount" class="mb-1">信用卡帳號</label>
-            <input type="text" class="form-control" id="craditAccount" placeholder="Xxxx-xxxx-xxxx-xxxx">
+            <label for="email" class="mb-1">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
           </div>
           <div class="mb-5">
-            <label for="dueDate" class="mb-1">有效日期</label>
-            <input type="text" class="form-control" id="dueDate" placeholder="(MM/YY)">
+            <label for="username" class="mb-1">姓名</label>
+            <input type="text" class="form-control" id="username" placeholder="請輸入姓名">
           </div>
           <div class="mb-5">
-            <label for="password" class="mb-1">安全碼</label>
-            <input type="password" class="form-control" id="password" placeholder="***">
+            <label for="phone" class="mb-1">聯絡電話</label>
+            <input type="tel" class="form-control" id="phone" placeholder="請輸入電話">
           </div>
+          <div class="mb-1">
+            <label for="coupon" class="mb-1">優惠碼</label>
+            <input type="text" class="form-control" id="coupon" placeholder="TG87526">
+          </div>
+          <p class="mb-0 text-end text-primary fs-9">優惠碼已生效</p>
         </form>
       </div>
       <div class="d-flex justify-content-between mb-1">
@@ -176,16 +185,10 @@
         <p class="fs-7 mb-0">NT$1000</p>
       </div>
       <div class="d-none d-md-grid gap-2">
-        <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./orderFinish.html">下一步</a>
+        <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./cartPayment.html">下一步</a>
       </div>
     </div>
     <div class="col-md-8 d-flex flex-column">
-      <ul class="cartProgress list-unstyled d-none d-md-flex justify-content-around">
-        <li class="cartDone">確認訂單</li>
-        <li class="cartDone">填寫訂購資訊</li>
-        <li class="fw-bold cartDone">填寫付款資訊</li>
-        <li>完成訂購</li>
-      </ul>
       <div class="cartCard card mb-5">
         <div class="row g-0">
           <div class="col-6 col-md-3">
@@ -271,14 +274,14 @@
         </div>
       </div>
       <div class="row mt-auto">
-        <div class="col-6 col-md-2">
+        <div class="col-6 col-md-3">
           <div class="d-grid gap-2">
-            <a class="btn btn-lg fs-8 btn-outline-primary" type="button" href="./payment.html">返回</a>
+            <a class="btn btn-lg fs-8 btn-outline-primary" type="button" href="./cartConfirm.html">返回</a>
           </div>
         </div>
         <div class="col-6 d-md-none">
           <div class="d-grid gap-2">
-            <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./orderFinish.html">下一步</a>
+            <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./cartPayment.html">下一步</a>
           </div>
         </div>
       </div>

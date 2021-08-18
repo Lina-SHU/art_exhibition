@@ -130,7 +130,7 @@
       <div class="d-flex align-items-center text-white">
         <p class="fs-7 mb-0 me-6">小計</p>
         <p class="fs-7 mb-0">NT$1050</p>
-        <a href="./confirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
+        <a href="./cartConfirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
       </div>
     </div>
   </div>
@@ -138,14 +138,18 @@
 
   
 <div class="container pt-5 pb-8">
+  <div class="row mb-5 mb-md-6-lg">
+    <div class="col-md-8">
+      <ul class="cartProgress list-unstyled d-flex justify-content-around mb-0">
+        <li class="progressBar fw-bold cartDone">確認訂單</li>
+        <li class="progressBar">填寫訂購資訊</li>
+        <li class="progressBar">填寫付款資訊</li>
+        <li class="progressBar">完成訂購</li>
+      </ul>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-8">
-      <ul class="cartProgress list-unstyled d-flex justify-content-around">
-        <li class="fw-bold cartDone">確認訂單</li>
-        <li>填寫訂購資訊</li>
-        <li>填寫付款資訊</li>
-        <li>完成訂購</li>
-      </ul>
       <div class="cartCard card mb-5">
         <div class="row g-0">
           <div class="col-6 col-md-3">
@@ -249,14 +253,14 @@
         </div>
       </div>
     </div>
-    <div class="col-6 offset-5 offset-md-0 col-md-4">
-      <div class="confirmCheck fullScreen d-flex flex-column justify-content-end">
+    <div class="col-6 offset-6 offset-md-0 col-md-4">
+      <div class="confirmCheck d-flex flex-column justify-content-end">
         <div class="d-flex justify-content-between mb-3">
           <p class="fs-7 mb-0">小計</p>
           <p class="fs-7 mb-0">NT$1050</p>
         </div>
         <div class="d-grid gap-2">
-          <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./personInfo.html">下一步</a>
+          <a class="btn btn-lg fs-8 btn-primary-light" type="button" href="./cartPersonInfo.html">下一步</a>
         </div>
       </div>
     </div>

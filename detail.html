@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/27bd1ef315.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -129,7 +130,7 @@
       <div class="d-flex align-items-center text-white">
         <p class="fs-7 mb-0 me-6">小計</p>
         <p class="fs-7 mb-0">NT$1050</p>
-        <a href="./confirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
+        <a href="./cartConfirm.html" class="offcanvasBtn btn btn-light ms-auto px-6">前往結帳</a>
       </div>
     </div>
   </div>
@@ -170,7 +171,7 @@
   <div class="row mb-8">
     <div class="col-lg-6 mb-8 mb-lg-0">
       <div class="detailCard card">
-        <div class="card-img d-flex justify-content-end align-items-center mb-2">
+        <div class="card-img bgCoverCenter d-flex justify-content-end align-items-center mb-2">
           <p class="fs-7 text-white mb-0">01 JUN | 31 OCT</p>
         </div>
         <div class="card-body p-0">
@@ -231,7 +232,7 @@
       的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</p>
     </div>
     <div class="col-12 order-md-1">
-      <div data-aos="fade-up" class="detailBanner mb-7"></div>
+      <div data-aos="fade-up" class="detailBanner bgCoverCenter mb-7"></div>
     </div>
     <div class="col-md-4 order-md-2">
       <img data-aos="fade-up" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg" alt="art-img" class="img-fluid">
@@ -241,46 +242,115 @@
 
 
     <div class="container">
-      <section class="mb-4 mb-md-10">
+      <section class="mb-6 mb-md-10">
         <h2 data-aos="fade-up" class="h3 mb-6 fw-bold">猜你也喜歡...</h2>
-        <div class="row justify-content-end">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card border-0 guessLike">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
-                class="card-img-top mb-1" alt="like-img">
-              <div class="card-body p-0">
-                <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
-                <p class="card-text mb-0 fs-7">$350</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card border-0 guessLike">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
-                class="card-img-top mb-1" alt="like-img">
-              <div class="card-body p-0">
-                <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
-                <p class="card-text mb-0 fs-7">$350</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card border-0 guessLike">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
-                class="card-img-top mb-1" alt="like-img">
-              <div class="card-body p-0">
-                <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
-                <p class="card-text mb-0 fs-7">$350</p>
+        <div class="row">
+          <div class="col-12 col-md-11 offset-md-1">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 guessLike w-100">
+                    <a href="./detail.html" class="position-relative mb-1">
+                      <img
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+                        class="card-img-top" alt="like-img">
+                        <div class="overlay position-absolute start-0 end-0 top-0 bottom-0">
+                          <div class="seeMore w-100 h-100 d-flex justify-content-center align-items-center">more...</div>
+                        </div>
+                    </a>
+                    <div class="card-body p-0">
+                      <h5 class="card-title mb-1 fs-7">No.22 線上設計展</h5>
+                      <p class="card-text mb-0 fs-7">$350</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-    <div class="subscribeBanner">
+    <div class="subscribeBanner bgCoverCenter">
       <div class="container h-100">
         <div class="d-flex align-items-end text-white h-100">
           <div class="subscribe">
@@ -293,7 +363,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer container">
+    <footer class="footer container py-4 py-md-6-lg">
       <div class="d-flex align-items-center">
         <div class="footerTitle d-md-flex align-items-center">
           <h2 class="fs-4 mb-0 me-4">EXHIBINECTION</h2>
@@ -312,6 +382,7 @@
         duration: 800,
       });
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
