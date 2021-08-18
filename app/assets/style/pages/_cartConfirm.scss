@@ -18,10 +18,10 @@
 }
 
 .confirmCheck{
+  margin-top: 91px;
   height: auto;
-  margin-top: 90px;
-  @include media-breakpoint-up(md) { 
-    height: calc(100vh - 155px);
+  @include media-breakpoint-up(md) {
     margin-top: 0;
+    height: calc(100vh - 195.38px);
   }
 }

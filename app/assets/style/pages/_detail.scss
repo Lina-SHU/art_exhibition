@@ -13,9 +13,8 @@
 
 .detailCard{
   .card-img{
-    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg') no-repeat;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg');
     height: 256px;
-    @include banner;
     p{
       width: 65px;
     }

@@ -5,14 +5,6 @@
   transform: translateX(100%);
 }
 
-.offcanvasBtn{
-  color: $primary;
-  &:hover{
-    background: $primary;
-    color: $white;
-  }
-}
-
 .scrollbar-primary::-webkit-scrollbar {
   width: 5px;
   background-color: $primary-light;

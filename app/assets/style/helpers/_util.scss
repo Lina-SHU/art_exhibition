@@ -1,16 +1,4 @@
-.fullScreen{
-  height: auto;
-  @include media-breakpoint-up(md) { 
-    height: calc(100vh - 155px);
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .position-lg-absolute{
-    position: absolute;
-  }
-
-  .translate-lg-middle{
-    transform: translate(-50%,-50%);
-  }
+.bgCoverCenter{
+  background-size: cover;
+  background-position: center center;
 }

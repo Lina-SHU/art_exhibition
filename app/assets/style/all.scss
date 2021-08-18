@@ -3,19 +3,21 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import './helpers/helper';
 @import './helpers/util';
 @import './helpers/base';
-@import './helpers/mixin';
+
+@import './components/progress';
+@import './components/offcanvas';
 
 @import './layout/header';
-@import './layout/footer';
 @import './layout/menu';
 @import './layout/banner';
 @import './layout/process';
-@import './layout/offcanvas';
+@import './layout/cartOffcanvas';
 
 @import './pages/index';
 @import './pages/product';
 @import './pages/detail';
-@import './pages/confirm';
-@import './pages/orderFinish';
+@import './pages/cartConfirm';
+@import './pages/cartOrderFinish';
