@@ -15205,6 +15205,10 @@ fieldset:disabled .btn {
   background-position: center center;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 i {
   vertical-align: middle;
 }
