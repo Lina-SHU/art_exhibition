@@ -15205,6 +15205,10 @@ fieldset:disabled .btn {
   background-position: center center;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -15219,15 +15223,33 @@ img {
      object-fit: cover;
 }
 
-.progressBar {
-  position: relative;
+.timeline {
+  border-top: 2px solid #E31277;
 }
 
-.progressBar::before {
+.timeline-bar {
+  position: relative;
+  padding-top: 6px;
+}
+
+.timeline-bar::before {
   content: "";
   width: 8px;
   height: 8px;
   background: #fff;
+  border: 1px solid #E31277;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+}
+
+.timeline-done::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #E31277;
   border: 1px solid #E31277;
   border-radius: 50%;
   display: inline-block;
@@ -15256,6 +15278,15 @@ img {
 
 .scrollbar-primary::-webkit-scrollbar-thumb {
   background-color: #fff;
+}
+
+.offcanvas-btn {
+  color: #630834;
+}
+
+.offcanvas-btn:hover {
+  background: #630834;
+  color: #fff;
 }
 
 .cartNumber {
@@ -15309,36 +15340,6 @@ img {
   height: 400px;
 }
 
-.cartProgress {
-  border-top: 2px solid #E31277;
-}
-
-.cartProgress .progressBar {
-  padding-top: 6px;
-}
-
-.cartProgress .cartDone::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #E31277;
-  border: 1px solid #E31277;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-}
-
-.offcanvasBtn {
-  color: #630834;
-}
-
-.offcanvasBtn:hover {
-  background: #630834;
-  color: #fff;
-}
-
 .bg-secondary-light-card {
   background: #EFEFEF;
 }
@@ -15388,12 +15389,6 @@ img {
 
 .recallSubtitle {
   margin-left: 12px;
-  font-weight: 500;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
 }
 
 .swiper-slide {
@@ -15462,10 +15457,6 @@ img {
   .products img {
     height: 285px;
   }
-}
-
-.products p {
-  font-weight: 500;
 }
 
 .detail {
